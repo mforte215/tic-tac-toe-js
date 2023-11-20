@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TIC TAC TOE</title>
+    <script src="./tictactoe.js"></script>
+    <link rel="stylesheet" href="./tictactoe.css">
+</head>
+
+<body onload="setGame()">
+    <div class="game-container">
+        <div class="title-container">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="game-board-container">
+            <div id="top-row">
+                <div onclick="playerClick()" class="game-block" id="a1"></div>
+                <div onclick="playerClick()" class="game-block" id="a2"></div>
+                <div onclick="playerClick()" class="game-block" id="a3"></div>
+            </div>
+            <div id="middle-row">
+                <div onclick="playerClick()" class="game-block" id="b1"></div>
+                <div onclick="playerClick()" class="game-block" id="b2"></div>
+                <div onclick="playerClick()" class="game-block" id="b3"></div>
+            </div>
+            <div id="bottom-row">
+                <div onclick="playerClick()" class="game-block" id="c1"></div>
+                <div onclick="playerClick()" class="game-block" id="c2"></div>
+                <div onclick="playerClick()" class="game-block" id="c3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="score-display">
+        <p id="score-message"></p>
+    </div>
+</body>
+
+</html>
